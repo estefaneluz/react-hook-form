@@ -1,42 +1,70 @@
-![](https://i.imgur.com/xG74tOh.png)
+# Getting Started with Create React App
 
-# Exercício de classe 🏫
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Criando posts
+## Available Scripts
 
-Utilizando a biblioteca `react-hook-form`:
+In the project directory, you can run:
 
-**1)** Crie um formulário que contenha os seguintes campos: 
-- Título (title)
-- Corpo (body)
-- ID do Usuário (userId)
+### `npm start`
 
-**2)** Controle os campos do formulário seguindo os requisitos abaixo:
-- Todos os campos são obrigatórios;
-- O título tem tamanho mínimo de 5 caracteres;
-- O corpo tem tamanho máximo de 30 caracteres;
-- O ID do Usuário deverá ser um número;
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**3)** Na submissão deste formulário, envie os dados para o seguinte recurso da API JSONPlaceholder:
-[https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Caso necessário, consulte a [documentação da API](http://jsonplaceholder.typicode.com/guide/)
+### `npm test`
 
-**4)** Crie um componente chamado `<Input>` e troque os `<input>`s do seu formulários por este componente. Dito isso, será necessário controlar esse componente com o `react-hook-form`. Utilize qualquer uma das duas maneiras vistas em aula para controlar este componente.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Extra**
+### `npm run build`
 
-**5)** Crie uma rota na sua aplicação (página) para cada rota da API JSONPlaceholder (GET, POST, PUT, DELETE). Cada página deverá ter seu próprio formulário. A página de GET pesquisará um recurso (por ID), a de POST criará um recurso, a de PUT atualizará um recurso e a dde DELETE deletará um recurso (por ID).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Caso necessário, consulte a [documentação da API](http://jsonplaceholder.typicode.com/guide/)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Preencha a checklist para finalizar o exercício:
+### `npm run eject`
 
-- [ ] Resolver o exercício
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-###### tags: `módulo 3` `React` `front-end`
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
