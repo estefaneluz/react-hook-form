@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+input {
+    padding: 3px;
+}
