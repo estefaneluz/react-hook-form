@@ -2,29 +2,34 @@ import './App.css';
 import { useForm } from 'react-hook-form'
 
 function App() {
-  const { register } = useForm();
+  const { register, handleSubmit } = useForm();
+
+  function onSubmit(data){
+    console.log(data)
+  }
+
   return (
     <div className="app">
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="title">Title</label>
         <input 
           id="title" 
           type="text"
-          {...register('title')}
+          {...register('title', { required: true, minLength: 5 })}
         />      
 
         <label htmlFor="body">Body</label>
         <input 
           id="body" 
           type="text"
-          {...register('body')}
+          {...register('body', { required: true, maxLength: 30 })}
         />  
 
         <label htmlFor="userId">User ID:</label>
         <input 
           id="userId" 
           type="number"
-          {...register('userId')}
+          {...register('userId', { required: true, valueAsNumber: true })}
         />
 
         <button>Enviar</button>
