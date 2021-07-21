@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import Input from '../../components/Input'
 
 const Page = () => {
-    const {register, formState: errors, handleSubmit} = useForm();
+    const {register, formState: {errors}, handleSubmit} = useForm();
 
     function onSubmit({id}){
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
