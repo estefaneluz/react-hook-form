@@ -24,24 +24,24 @@ function App() {
   return (
     <div className="app">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="title">Title</label>
-        <input 
+        <Input 
+          label="Title"
           id="title" 
-          type="text"
+          type="text"  
           {...register('title', { required: true, minLength: 5 })}
-        />      
+        />
 
-        <label htmlFor="body">Body</label>
-        <input 
+        <Input 
+          label="Body"
           id="body" 
-          type="text"
+          type="text"  
           {...register('body', { required: true, maxLength: 30 })}
-        />  
+        />
 
-        <label htmlFor="userId">User ID:</label>
-        <input 
+        <Input 
+          label="User ID:"
           id="userId" 
-          type="number"
+          type="number"  
           {...register('userId', { required: true, valueAsNumber: true })}
         />
 
