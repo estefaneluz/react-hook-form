@@ -8,6 +8,6 @@
 
 
 Preencha a checklist para finalizar o exercício:
--   [ ] Forkar o repositório
+-   [x] Forkar o repositório
 
 ###### tags: `módulo 3` `React` `front-end`
