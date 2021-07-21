@@ -6,7 +6,20 @@ const Page = () => {
     const {register, formState: {errors}, handleSubmit} = useForm();
 
     function onSubmit(data){
-        console.log(data);
+        fetch(`https://jsonplaceholder.typicode.com/posts/${data.id}`, {
+          method: "PUT",
+          body: JSON.stringify({
+            id: data.id,
+            title: data.title,
+            body: data.body,
+            userId: data.userId,
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json));
     }
 
     return (
