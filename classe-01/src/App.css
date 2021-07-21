@@ -28,6 +28,12 @@ input {
     font-weight: 600;
 }
 
+.success {
+    margin-top: 3vh;
+    color: #001e1d;
+    font-weight: 600;
+}
+
 .container{
     padding: 1rem;
     margin: 10vh auto;
