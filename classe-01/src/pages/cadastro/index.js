@@ -1,11 +1,17 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import { useForm } from 'react-hook-form';
 import  Input from '../../components/Input'
 
 const Page = () => {
     const { register, formState: {errors}, handleSubmit } = useForm();
-  
+    const [success, setSuccess] = useState('');
+
+    useEffect(()=>{
+      setSuccess('');
+    }, [errors.title, errors.body, errors.userId])
+
     function onSubmit(data){
+      setSuccess('');
       fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         body: JSON.stringify({
@@ -18,7 +24,7 @@ const Page = () => {
         },
       })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => setSuccess('Postagem criada!'));
     }
   
     return (
@@ -53,6 +59,7 @@ const Page = () => {
     
             <button>Enviar</button>
           </form>
+          <p className="success">{success}</p>
         </div>
     );
   }
