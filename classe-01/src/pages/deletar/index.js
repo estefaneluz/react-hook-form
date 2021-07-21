@@ -7,7 +7,6 @@ const Page = () => {
     const [success, setSuccess] = useState('');
 
     function onSubmit({id}){
-        setSuccess('');
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
           method: "DELETE",
         }).then(() => setSuccess('Postagem deletada.'));

@@ -11,7 +11,6 @@ const Page = () => {
     }, [errors.id, errors.title, errors.body, errors.userId])
 
     function onSubmit(data){
-        setSuccess('');
         fetch(`https://jsonplaceholder.typicode.com/posts/${data.id}`, {
           method: "PUT",
           body: JSON.stringify({
