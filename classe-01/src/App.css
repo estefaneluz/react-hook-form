@@ -5,15 +5,15 @@
 }
 
 .app {
-    display: grid;
-    place-content: center;
-    height: 100vh;
+    display: flex;
+    min-height: 100vh;
 }
 
 form {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 10vh;
 }
 
 input {
@@ -22,4 +22,8 @@ input {
 
 span {
     color: red;
+}
+
+.container{
+    margin: 10vh auto;
 }

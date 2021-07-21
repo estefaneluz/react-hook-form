@@ -23,6 +23,8 @@ const Page = () => {
     }
 
     return (
+      <div className="container">
+      <h1>Edite uma Postagem</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input
           label="ID da postagem:"
@@ -68,6 +70,7 @@ const Page = () => {
 
         <button>Editar</button>
       </form>
+      </div>
     );
 }
 

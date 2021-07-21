@@ -1,0 +1,23 @@
+.menu-lateral {
+    width: 30%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: bisque;
+}
+
+.menu-lateral ul li{
+    list-style: none;
+    margin: 1vh 0;
+    padding: 2vh 3vw;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: aquamarine;
+    border-bottom: 2px solid black;
+}
+
+.menu-lateral ul li:hover{
+    background-color:blueviolet;
+    border-bottom: 2px solid black;
+    letter-spacing: .17em;
+}

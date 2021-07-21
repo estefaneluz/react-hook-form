@@ -12,6 +12,8 @@ const Page = () => {
     }
 
     return (
+      <div className="container">
+        <h1>Pesquise por uma Postagem</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Input 
             label="Informe o ID:"
@@ -22,6 +24,7 @@ const Page = () => {
           {errors.id?.type === 'required' && <span>É preciso informar o ID.</span>}
           <button>Pesquisar</button>
         </form>
+      </div>
     );
 }
 
