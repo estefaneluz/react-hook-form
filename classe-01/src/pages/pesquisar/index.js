@@ -5,8 +5,10 @@ import Input from '../../components/Input'
 const Page = () => {
     const {register, formState: {errors}, handleSubmit } = useForm();
 
-    function onSubmit(data){
-        console.log(data)
+    function onSubmit({id}){
+        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+          .then((response) => response.json())
+          .then((json) => console.log(json));
     }
 
     return (
