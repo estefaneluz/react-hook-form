@@ -8,6 +8,8 @@
 .app {
     display: flex;
     min-height: 100vh;
+    background-color: #e8e4e6;
+    color: #001e1d;;
 }
 
 form {
@@ -23,8 +25,29 @@ input {
 
 span {
     color: red;
+    font-weight: 600;
 }
 
 .container{
     margin: 10vh auto;
 }
+
+button {
+    all: unset;
+    background-color: #f9bc60;
+    padding: 10px;
+    text-align: center;
+    color: #001e1d;
+    font-weight: 500;
+    box-shadow: 1px 1px 1px 1px #fcae39;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 600ms;
+}
+
+button:hover {
+    background-color: #e16162;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #e04f4f;
+}
+

@@ -14,6 +14,7 @@
     text-transform: uppercase;
     letter-spacing: .1em;
     border-bottom: 1px solid black;
+    transition-duration: 600ms;
 }
 
 .menu-lateral ul li:hover{
