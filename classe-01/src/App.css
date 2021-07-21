@@ -16,7 +16,7 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 input {
@@ -29,6 +29,7 @@ span {
 }
 
 .container{
+    padding: 1rem;
     margin: 10vh auto;
 }
 
