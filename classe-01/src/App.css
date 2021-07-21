@@ -23,7 +23,7 @@ input {
     padding: 3px;
 }
 
-span {
+.error {
     color: red;
     font-weight: 600;
 }

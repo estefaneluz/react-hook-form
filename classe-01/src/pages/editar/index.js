@@ -33,7 +33,7 @@ const Page = () => {
           {...register("id", { required: true, valueAsNumber: true })}
         />
         {errors.id?.type === "required" && (
-          <span>O campo ID é obrigatório.</span>
+          <span className="error">O campo ID é obrigatório.</span>
         )}
         <Input
           label="Title"
@@ -42,10 +42,10 @@ const Page = () => {
           {...register("title", { required: true, minLength: 5 })}
         />
         {errors.title?.type === "required" && (
-          <span>O campo Title é obrigatório.</span>
+          <span className="error">O campo Title é obrigatório.</span>
         )}
         {errors.title?.type === "minLength" && (
-          <span>O campo Title precisa ter ao menos 5 caracteres.</span>
+          <span className="error">O campo Title precisa ter ao menos 5 caracteres.</span>
         )}
 
         <Input
@@ -55,10 +55,10 @@ const Page = () => {
           {...register("body", { required: true, maxLength: 30 })}
         />
         {errors.body?.type === "required" && (
-          <span>O campo Body é obrigatório.</span>
+          <span className="error">O campo Body é obrigatório.</span>
         )}
         {errors.body?.type === "maxLength" && (
-          <span>O campo Body não pode ultrapassar 30 caracteres.</span>
+          <span className="error">O campo Body não pode ultrapassar 30 caracteres.</span>
         )}
 
         <Input
@@ -68,7 +68,7 @@ const Page = () => {
           {...register("userId", { required: true, valueAsNumber: true })}
         />
         {errors.userId?.type === "required" && (
-          <span>O campo User ID é obrigatório.</span>
+          <span className="error">O campo User ID é obrigatório.</span>
         )}
 
         <button>Editar</button>

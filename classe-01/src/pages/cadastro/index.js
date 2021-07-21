@@ -31,8 +31,8 @@ const Page = () => {
               type="text"  
               {...register('title', { required: true, minLength: 5 })}
             />
-            {errors.title?.type === 'required' && <span>O campo Title é obrigatório.</span>}
-            {errors.title?.type === 'minLength' && <span>O campo Title precisa ter ao menos 5 caracteres.</span>}
+            {errors.title?.type === 'required' && <span className="error">O campo Title é obrigatório.</span>}
+            {errors.title?.type === 'minLength' && <span className="error">O campo Title precisa ter ao menos 5 caracteres.</span>}
     
             <Input 
               label="Body"
@@ -40,8 +40,8 @@ const Page = () => {
               type="text"  
               {...register('body', { required: true, maxLength: 30 })}
             />
-            {errors.body?.type === 'required' && <span>O campo Body é obrigatório.</span>}
-            {errors.body?.type === 'maxLength' && <span>O campo Body não pode ultrapassar 30 caracteres.</span>}
+            {errors.body?.type === 'required' && <span className="error">O campo Body é obrigatório.</span>}
+            {errors.body?.type === 'maxLength' && <span className="error">O campo Body não pode ultrapassar 30 caracteres.</span>}
     
             <Input 
               label="User ID:"
@@ -49,7 +49,7 @@ const Page = () => {
               type="number"  
               {...register('userId', { required: true, valueAsNumber: true })}
             />
-            {errors.userId?.type === 'required' && <span>O campo User ID é obrigatório.</span>}
+            {errors.userId?.type === 'required' && <span className="error">O campo User ID é obrigatório.</span>}
     
             <button>Enviar</button>
           </form>

@@ -21,7 +21,7 @@ const Page = () => {
             type="number"  
             {...register('id', { required: true, valueAsNumber: true })}
           />
-          {errors.id?.type === 'required' && <span>É preciso informar o ID.</span>}
+          {errors.id?.type === 'required' && <span className="error">É preciso informar o ID.</span>}
           <button>Pesquisar</button>
         </form>
       </div>
