@@ -1,5 +1,6 @@
 import './App.css';
 import { useForm } from 'react-hook-form'
+import  Input from './components/Input'
 
 function App() {
   const { register, handleSubmit } = useForm();
