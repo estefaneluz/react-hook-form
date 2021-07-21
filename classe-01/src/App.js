@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import  Input from './components/Input'
 
 function App() {
-  const { register, handleSubmit } = useForm();
+  const { register, formState: {errors}, handleSubmit } = useForm();
 
   function onSubmit(data){
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -30,6 +30,8 @@ function App() {
           type="text"  
           {...register('title', { required: true, minLength: 5 })}
         />
+        {errors.title?.type === 'required' && <span>O campo Title é obrigatório.</span>}
+        {errors.title?.type === 'minLength' && <span>O campo Title precisa ter ao menos 5 caracteres.</span>}
 
         <Input 
           label="Body"
@@ -37,6 +39,8 @@ function App() {
           type="text"  
           {...register('body', { required: true, maxLength: 30 })}
         />
+        {errors.body?.type === 'required' && <span>O campo Body é obrigatório.</span>}
+        {errors.body?.type === 'maxLength' && <span>O campo Body não pode ultrapassar 30 caracteres.</span>}
 
         <Input 
           label="User ID:"
@@ -44,6 +48,7 @@ function App() {
           type="number"  
           {...register('userId', { required: true, valueAsNumber: true })}
         />
+        {errors.userId?.type === 'required' && <span>O campo User ID é obrigatório.</span>}
 
         <button>Enviar</button>
       </form>

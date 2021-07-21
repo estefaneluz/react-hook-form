@@ -19,3 +19,7 @@ form {
 input {
     padding: 3px;
 }
+
+span {
+    color: red;
+}
