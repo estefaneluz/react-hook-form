@@ -32,6 +32,9 @@ const Page = () => {
           type="number"
           {...register("id", { required: true, valueAsNumber: true })}
         />
+        {errors.id?.type === "required" && (
+          <span>O campo ID é obrigatório.</span>
+        )}
         <Input
           label="Title"
           id="title"
