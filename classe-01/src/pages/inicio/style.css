@@ -1,0 +1,14 @@
+.container.home{
+    display: grid;
+    place-items: center;
+}
+
+#ilustracao-home{
+    margin: 3vh 0 0 5vw;
+    width: 35%;
+    height: auto;
+}
+
+p {
+    font-size: 1.2em;
+}

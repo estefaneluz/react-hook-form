@@ -4,11 +4,12 @@ import Cadastro from './pages/cadastro'
 import Pesquisar from './pages/pesquisar'
 import Deletar from './pages/deletar'
 import Editar from './pages/editar'
+import Inicio from './pages/inicio'
 
 export default function Routes() {
     return (
         <Switch>
-            <Route path="/" exact />
+            <Route path="/" exact component={Inicio}/>
 
             <Route path="/cadastro" component={Cadastro}/>
 
