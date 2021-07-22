@@ -3,8 +3,11 @@
     width: 30%;
     min-height: 100vh;
     display: grid;
-    align-items: center;
     background-color: #004643;
+}
+
+.menu-lateral ul {
+    margin-top: 10vh;
 }
 
 .menu-lateral ul li{
