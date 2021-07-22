@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-hook-form/static/css/main.e2ca7c88.chunk.css",
-    "main.js": "/react-hook-form/static/js/main.2c23a677.chunk.js",
-    "main.js.map": "/react-hook-form/static/js/main.2c23a677.chunk.js.map",
+    "main.js": "/react-hook-form/static/js/main.f68af320.chunk.js",
+    "main.js.map": "/react-hook-form/static/js/main.f68af320.chunk.js.map",
     "runtime-main.js": "/react-hook-form/static/js/runtime-main.bc4e763f.js",
     "runtime-main.js.map": "/react-hook-form/static/js/runtime-main.bc4e763f.js.map",
     "static/js/2.a0d22dcf.chunk.js": "/react-hook-form/static/js/2.a0d22dcf.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.bc4e763f.js",
     "static/js/2.a0d22dcf.chunk.js",
     "static/css/main.e2ca7c88.chunk.css",
-    "static/js/main.2c23a677.chunk.js"
+    "static/js/main.f68af320.chunk.js"
   ]
 }
