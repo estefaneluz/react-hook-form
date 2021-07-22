@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../../components/Input'
 import Post from '../../components/Post'
@@ -6,6 +6,10 @@ import Post from '../../components/Post'
 const Page = () => {
     const {register, formState: {errors}, handleSubmit } = useForm();
     const [post, setPost] = useState({});
+
+    useEffect(()=>{
+      setPost({})
+    }, [errors.id]);
 
     function onSubmit({id}){
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -33,7 +37,7 @@ const Page = () => {
           {errors.id?.type === 'required' && <span className="error">É preciso informar o ID.</span>}
           <button>Pesquisar</button>
         </form>
-        {!post.isEmptyObject && <Post content={post}/>}
+        {post.title && <Post content={post}/>}
       </div>
     );
 }
