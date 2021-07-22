@@ -1,11 +1,11 @@
 .card-post{
-    margin: 3vh 0;
+    margin: 3vh auto;
     background-color: #abd1c6;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #7bb4a4;
+    min-width: 200px;
     max-width: 50vw;
-
 }
 
 .card-post h4 {
