@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './Routes'
+import Routes from './Routes';
 import MenuLateral from './components/MenuLateral';
 
 function App() {

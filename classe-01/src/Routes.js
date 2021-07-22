@@ -6,18 +6,20 @@ import Deletar from './pages/deletar'
 import Editar from './pages/editar'
 import Inicio from './pages/inicio'
 
+export const urlBase = '/react-hook-form'
+
 export default function Routes() {
     return (
         <Switch>
-            <Route path="/" exact component={Inicio}/>
+            <Route path={urlBase} exact component={Inicio}/>
 
-            <Route path="/cadastro" component={Cadastro}/>
+            <Route path={`${urlBase}/cadastro`} component={Cadastro}/>
 
-            <Route path="/pesquisar" component={Pesquisar}/>
+            <Route path={`${urlBase}/pesquisar`} component={Pesquisar}/>
 
-            <Route path="/editar" component={Editar}/>
+            <Route path={`${urlBase}/editar`} component={Editar}/>
 
-            <Route path="/deletar" component={Deletar}/>
+            <Route path={`${urlBase}/deletar`} component={Deletar}/>
         </Switch>
     );
 }
