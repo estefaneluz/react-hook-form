@@ -26,8 +26,7 @@ const Page = () => {
           .then((response) => response.json())
           .then((json) => {
             setSuccess("Postagem editada.")
-            console.log(json)
-            });
+          });
     }
 
     return (
