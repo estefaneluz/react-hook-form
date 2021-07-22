@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-hook-form/static/css/main.e2ca7c88.chunk.css",
+    "main.js": "/react-hook-form/static/js/main.99b12443.chunk.js",
+    "main.js.map": "/react-hook-form/static/js/main.99b12443.chunk.js.map",
+    "runtime-main.js": "/react-hook-form/static/js/runtime-main.bc4e763f.js",
+    "runtime-main.js.map": "/react-hook-form/static/js/runtime-main.bc4e763f.js.map",
+    "static/js/2.a0d22dcf.chunk.js": "/react-hook-form/static/js/2.a0d22dcf.chunk.js",
+    "static/js/2.a0d22dcf.chunk.js.map": "/react-hook-form/static/js/2.a0d22dcf.chunk.js.map",
+    "index.html": "/react-hook-form/index.html",
+    "static/css/main.e2ca7c88.chunk.css.map": "/react-hook-form/static/css/main.e2ca7c88.chunk.css.map",
+    "static/js/2.a0d22dcf.chunk.js.LICENSE.txt": "/react-hook-form/static/js/2.a0d22dcf.chunk.js.LICENSE.txt",
+    "static/media/post.98e46b2c.png": "/react-hook-form/static/media/post.98e46b2c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc4e763f.js",
+    "static/js/2.a0d22dcf.chunk.js",
+    "static/css/main.e2ca7c88.chunk.css",
+    "static/js/main.99b12443.chunk.js"
+  ]
+}
