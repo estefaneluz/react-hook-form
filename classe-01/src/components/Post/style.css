@@ -4,10 +4,17 @@
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #7bb4a4;
+    max-width: 50vw;
 
 }
 
 .card-post h4 {
     border-bottom: 1px solid #001e1d85;
+    padding-bottom: 1vh;
     margin: 1vh 0;
+    font-weight: 600;
+}
+
+.card-post p{
+    color: #0f3433;
 }

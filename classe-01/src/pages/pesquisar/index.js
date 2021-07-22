@@ -1,15 +1,23 @@
-import React from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../../components/Input'
 import Post from '../../components/Post'
 
 const Page = () => {
     const {register, formState: {errors}, handleSubmit } = useForm();
+    const [post, setPost] = useState({});
 
     function onSubmit({id}){
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
           .then((response) => response.json())
-          .then((json) => console.log(json));
+          .then((json) => {
+            setPost({
+            title: json.title,
+            userId: json.userId,
+            body: json.body,
+            id: json.id
+            })
+          });
     }
 
     return (
@@ -25,7 +33,7 @@ const Page = () => {
           {errors.id?.type === 'required' && <span className="error">É preciso informar o ID.</span>}
           <button>Pesquisar</button>
         </form>
-        <Post title={"O guia do mochileiro das galaxias"} body={"Um livro muito bom"} userId={1234}/>
+        {!post.isEmptyObject && <Post content={post}/>}
       </div>
     );
 }
