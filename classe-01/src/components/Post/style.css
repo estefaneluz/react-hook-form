@@ -1,0 +1,13 @@
+.card-post{
+    margin: 3vh 0;
+    background-color: #abd1c6;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #7bb4a4;
+
+}
+
+.card-post h4 {
+    border-bottom: 1px solid #001e1d85;
+    margin: 1vh 0;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../../components/Input'
+import Post from '../../components/Post'
 
 const Page = () => {
     const {register, formState: {errors}, handleSubmit } = useForm();
@@ -24,6 +25,7 @@ const Page = () => {
           {errors.id?.type === 'required' && <span className="error">É preciso informar o ID.</span>}
           <button>Pesquisar</button>
         </form>
+        <Post title={"O guia do mochileiro das galaxias"} body={"Um livro muito bom"} userId={1234}/>
       </div>
     );
 }
