@@ -2,12 +2,17 @@
 
 # Gerenciando o estado de formulários
 
-## Exercícios de classe 🏫
+## 🔗 Link para o site: https://estefaneluz.github.io/react-hook-form/ 
 
-1. Cadastro de posts
+O projeto se encontra no arquivo "classe 01". 
 
+## ⚙️Tecnologias utilizadas: 
+- React.js 
+  - useForm
+  - React Router Dom (Switch, Route, etc.)
+  - Fetch 
 
-Preencha a checklist para finalizar o exercício:
--   [x] Forkar o repositório
+#### Ilustração by https://www.ls.graphics/illustrations 
+#### Favicon by https://www.flaticon.com/br/packs/stationery-208 
 
 ###### tags: `módulo 3` `React` `front-end`
